@@ -25,3 +25,17 @@
   solids:
     FoodPlate: 1
     FoodSnackChocolate: 1
+
+- type: microwaveMealRecipe
+  id: RecipeSynthFlesh
+  name: synthflesh recipe
+  result: MedicatedSuture
+  time: 30
+  solids:
+    MaterialCloth1: 1
+  reagents:
+    TranexamicAcid: 20
+    Cryptobiolin: 20
+    Bicaridine: 20
+    Kelotane: 20
+    Dylovene: 20

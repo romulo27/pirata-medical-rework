@@ -1,0 +1,21 @@
+- type: entity
+  name: synthflesh patch
+  description: An agglomerate of healing chemicals and bacteria capable of reconstructing and purifying flesh.
+  parent: BaseHealingItem
+  id: SynthPatch
+  components:
+  - type: Sprite
+    sprite: EstacaoPirata/Objects/Specific/Medical/medical.rsi
+    state: synthpatch
+  - type: Healing
+    damageContainers:
+      - Biological
+    damage:
+      groups:
+        Brute: -30
+        Burn: -30 #valores placeholder só pra eu ver se tá pegando
+        Toxin: -30
+    healingBeginSound:
+      path: "/Audio/Items/Medical/brutepack_begin.ogg"
+    healingEndSound:
+      path: "/Audio/Items/Medical/brutepack_end.ogg"
