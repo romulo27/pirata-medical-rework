@@ -28,7 +28,8 @@ ui-options-volume-percent = { TOSTRING($volume, "P0") }
 ## Graphics menu
 
 ui-options-show-held-item = Mostrar item segurado próximo ao cursor?
-ui-options-show-combat-mode-indicators = Mostrar indicadores do modo de combate proximo ao cursor?
+ui-options-show-combat-mode-indicators = Mostrar bate-papo LOOC acima da cabeça dos personagens?
+ui-options-show-looc-on-head = Show LOOC chat above characters head?
 ui-options-vsync = VSync
 ui-options-fullscreen = Tela cheia
 ui-options-lighting-label = Qualidade de Iluminação:
@@ -82,6 +83,7 @@ ui-options-header-dev = Desenvolvimento
 ui-options-header-general = Geral
 
 ui-options-hotkey-keymap = Usar teclas QWERTY
+ui-options-hotkey-toggle-walk = Alternar caminhar
 
 ui-options-function-move-up = Mover pra Cima
 ui-options-function-move-left = Mover pra Esquerda
@@ -147,6 +149,7 @@ ui-options-function-escape-context = Fechar a janela recente ou alterna menu do 
 
 ui-options-function-take-screenshot = Tirar screenshot
 ui-options-function-take-screenshot-no-ui = Tirar screenshot (Sem UI)
+ui-options-function-toggle-fullscreen = Alternar para o modo tela cheia
 
 ui-options-function-editor-place-object = Colocar Objeto
 ui-options-function-editor-cancel-place = Cancelar Posicionamento

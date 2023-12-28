@@ -6,6 +6,7 @@
   - type: StorageFill
     contents:
       - id: ClothingNeckCloakQm
+      - id: BoxFolderQmClipboard
       - id: ClothingHeadsetCargo
       - id: ClothingUniformJumpsuitQMTurtleneck
       - id: ClothingUniformJumpskirtQMTurtleneck
@@ -57,6 +58,7 @@
       - id: JetpackCaptainFilled
       - id: MedalCase
       - id: ClothingHeadHatCapcap
+      - id: WeaponEnergyGun
 
 - type: entity
   id: LockerCaptainFilled
@@ -90,6 +92,7 @@
       - id: JetpackCaptainFilled
       - id: MedalCase
       - id: ClothingHeadHatCapcap
+      - id: WeaponEnergyGun
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -120,6 +123,7 @@
       - id: ClothingBackpackIan
         prob: 0.5
       - id: AccessConfigurator
+      - id: WeaponEnergyGun
 
 - type: entity
   id: LockerChiefEngineerFilledHardsuit
@@ -197,8 +201,11 @@
         amount: 3
       - id: BoxEncryptionKeyMedical
       - id: CloningPodMachineCircuitboard
+        prob: 0.67
       - id: CloningConsoleComputerCircuitboard
+        prob: 0.67
       - id: MedicalScannerMachineCircuitboard
+        prob: 0.67
 
 - type: entity
   id: LockerChiefMedicalOfficerFilled
@@ -303,6 +310,8 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: WeaponEnergyGunMultiphase
+      - id: WeaponEnergyGun
 
 - type: entity
   id: LockerHeadOfSecurityFilled
@@ -333,3 +342,5 @@
       - id: BoxEncryptionKeySecurity
       - id: HoloprojectorSecurity
       - id: BookSecretDocuments
+      - id: WeaponEnergyGunMultiphase
+      - id: WeaponEnergyGun

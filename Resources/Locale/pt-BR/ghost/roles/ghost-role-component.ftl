@@ -6,6 +6,9 @@ ghost-role-component-default-rules = Você não se lembra de nada da sua vida pa
 ghost-role-information-mouse-name = Rato
 ghost-role-information-mouse-description = Um rato faminto e travesso.
 
+ghost-role-information-mothroach-name = Mothbarata
+ghost-role-information-mothroach-description = Uma fofa mas maliciosa mothbarata.
+
 ghost-role-information-giant-spider-name = Aranha gigante
 ghost-role-information-giant-spider-description = Cause estragos nos habitantes da estação!
 
@@ -54,6 +57,9 @@ ghost-role-information-salvage-carp-description = Defenda o saque dentro do nauf
 
 ghost-role-information-sentient-carp-name = Carpa Senciente
 ghost-role-information-sentient-carp-description = Ajude o dragão a encher a estação de carpas!
+
+ghost-role-information-salvage-shark-name = Sharkminnow espacial em naufrágio de salvamento
+ghost-role-information-salvage-shark-description = Ajude as carpas mais jovens a proteger suas presas. Cheire o sangue!
 
 ghost-role-information-willow-name = Willow o canguru
 ghost-role-information-willow-description = Você é um canguru chamado Willow! Willow gosta de caixa.
@@ -156,7 +162,7 @@ ghost-role-information-cburn-agent-name = CBURN Agent
 ghost-role-information-cburn-agent-description = Um agente CentCom altamente treinado, capaz de lidar com várias ameaças.
 
 ghost-role-information-centcom-official-name = CentCom official
-ghost-role-information-centcom-official-description = Inspecionar a estação, faça avaliações de desempenho para chefes de departamento, incomode o capitão.
+ghost-role-information-centcom-official-description = Desempenhar funções relacionadas ao CentComm, como inspecionar a estação, anotar avaliações de desempenho para chefes de equipe e gerenciar o aparelho de fax.
 
 ghost-role-information-nukeop-rules = You are a syndicate operative tasked with the destruction of the station. As an antagonist, do whatever is required to complete this task.
 
@@ -166,3 +172,10 @@ ghost-role-information-loneop-rules = Você é um agente do sindicato encarregad
 
 ghost-role-information-behonker-name = Behonker
 ghost-role-information-behonker-description = Você é um antagonista, traga a morte e buzinas para aqueles que não seguem a honkmother.
+
+ghost-role-information-Death-Squad-name = Death Squad Operative
+ghost-role-information-Death-Squad-description = Um dos principais agentes de assuntos internos da Nanotrasen. Aguarde ordens do CentComm ou de um oficial.
+
+ghost-role-information-Cak-name = Cak
+ghost-role-information-Cak-description = Você é o filho favorito do chef. Você é gato-bolo vivo.
+ghost-role-information-Cak-rules = Você é um doce gato vivo e comestível. Sua tarefa é encontrar o seu lugar neste mundo onde tudo quer te comer.

@@ -1,0 +1,50 @@
+- type: job
+  id: Blueshield
+  name: job-name-blueshield
+  description: job-description-hop
+  playTimeTracker: JobBlueshield
+  requirements:
+    - !type:DepartmentTimeRequirement
+      department: Security
+      time: 7200
+    - !type:DepartmentTimeRequirement
+      department: Engineering
+      time: 3600
+    - !type:DepartmentTimeRequirement
+      department: Medical
+      time: 3600
+    - !type:OverallPlaytimeRequirement
+      time: 108000
+  weight: 10
+  startingGear: BlueshieldGear
+  icon: "JobIconSecurityOfficer"
+  requireAdminNotify: true
+  supervisors: job-supervisors-captain
+  canBeAntag: false
+  access:
+  - Command
+  - Maintenance
+  - Security
+  - Service
+  - Medical
+  - Brig
+  - External
+
+
+- type: startingGear
+  id: BlueshieldGear
+  equipment:
+    jumpsuit: ClothingUniformJumpsuitBlueshield
+    back: ClothingBackpackHOPFilled
+    shoes: ClothingShoesBootsCombatFilled
+    head: ClothingHeadHatBeretBlueshield
+    gloves: ClothingHandsGlovesCombat
+    eyes: ClothingEyesGlassesBlueshield
+    outerClothing: ClothingOuterVestBlueshield
+    belt: ClothingBeltSecurityFilled
+    pocket1: WeaponDisabler
+    id: BlueshieldPDA
+    ears: ClothingHeadsetAltSecurity
+  innerClothingSkirt: ClothingUniformJumpskirtHoP
+  satchel: ClothingBackpackSatchelHOPFilled
+  duffelbag: ClothingBackpackDuffelHOPFilled

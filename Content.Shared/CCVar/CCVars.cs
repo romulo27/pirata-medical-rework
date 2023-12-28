@@ -258,6 +258,26 @@ namespace Content.Shared.CCVar
             CVarDef.Create("game.panic_bunker.enabled", false, CVar.NOTIFY | CVar.REPLICATED);
 
         /// <summary>
+        /// Whether or not the panic bunker will disable when an admin comes online.
+        /// </summary>
+        public static readonly CVarDef<bool> PanicBunkerDisableWithAdmins =
+            CVarDef.Create("game.panic_bunker.disable_with_admins", false, CVar.SERVERONLY);
+
+        /// <summary>
+        /// Whether or not the panic bunker will enable when no admins are online.
+        /// </summary>
+        public static readonly CVarDef<bool> PanicBunkerEnableWithoutAdmins =
+            CVarDef.Create("game.panic_bunker.enable_without_admins", false, CVar.SERVERONLY);
+
+        /// <summary>
+        /// Whether or not the panic bunker will count deadminned admins for
+        /// <see cref="PanicBunkerDisableWithAdmins"/> and
+        /// <see cref="PanicBunkerEnableWithoutAdmins"/>
+        /// </summary>
+        public static readonly CVarDef<bool> PanicBunkerCountDeadminnedAdmins =
+            CVarDef.Create("game.panic_bunker.count_deadminned_admins", false, CVar.SERVERONLY);
+
+        /// <summary>
         /// Show reason of disconnect for user or not.
         /// </summary>
         public static readonly CVarDef<bool> PanicBunkerShowReason =
@@ -633,6 +653,9 @@ namespace Content.Shared.CCVar
 
         public static readonly CVarDef<bool> CombatModeIndicatorsPointShow =
             CVarDef.Create("hud.combat_mode_indicators_point_show", true, CVar.ARCHIVE | CVar.CLIENTONLY);
+
+        public static readonly CVarDef<bool> LoocAboveHeadShow =
+            CVarDef.Create("hud.show_looc_above_head", true, CVar.ARCHIVE | CVar.CLIENTONLY);
 
         public static readonly CVarDef<float> HudHeldItemOffset =
             CVarDef.Create("hud.held_item_offset", 28f, CVar.ARCHIVE | CVar.CLIENTONLY);
@@ -1512,7 +1535,7 @@ namespace Content.Shared.CCVar
         /// Duration for missions
         /// </summary>
         public static readonly CVarDef<float>
-            SalvageExpeditionDuration = CVarDef.Create("salvage.expedition_duration", 420f, CVar.REPLICATED);
+            SalvageExpeditionDuration = CVarDef.Create("salvage.expedition_duration", 660f, CVar.REPLICATED);
 
         /// <summary>
         /// Cooldown for missions.
@@ -1605,6 +1628,12 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<float> DragDropDeadZone =
             CVarDef.Create("control.drag_dead_zone", 12f, CVar.CLIENTONLY | CVar.ARCHIVE);
+
+        /// <summary>
+        /// Toggles whether the walking key is a toggle or a held key.
+        /// </summary>
+        public static readonly CVarDef<bool> ToggleWalk =
+            CVarDef.Create("control.toggle_walk", false, CVar.CLIENTONLY | CVar.ARCHIVE);
 
         /*
          * UPDATE
@@ -1792,5 +1821,16 @@ namespace Content.Shared.CCVar
         /// </summary>
         public static readonly CVarDef<string> ReplayAutoRecordTempDir =
             CVarDef.Create("replay.auto_record_temp_dir", "", CVar.SERVERONLY);
+
+        public static readonly CVarDef<float> InitialTime =
+            CVarDef.Create("time.initial_time", 1200f, desc: "(integer)", flag: CVar.REPLICATED);
+        public static readonly CVarDef<float> TimeScale =
+            CVarDef.Create("time.scale", 24f, desc: "(integer)", flag: CVar.REPLICATED);
+        public static readonly CVarDef<bool> CycleEnabled =
+            CVarDef.Create("daycycle.light_cycle", false, desc: "(bool)", flag: CVar.SERVERONLY);
+        public static readonly CVarDef<bool> ColorEnabled =
+            CVarDef.Create("daycycle.color_cycle", false, desc: "(bool)", flag: CVar.SERVERONLY);
+        public static readonly CVarDef<bool> AnnouncementEnabled =
+            CVarDef.Create("daycycle.announcement", false, desc: "(bool)", flag: CVar.SERVERONLY);
     }
 }

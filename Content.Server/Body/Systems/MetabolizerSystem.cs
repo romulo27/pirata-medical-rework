@@ -1,9 +1,9 @@
 using Content.Server.Body.Components;
-using Content.Server.Chemistry.Components.SolutionManager;
-using Content.Server.Chemistry.EntitySystems;
 using Content.Shared.Administration.Logs;
 using Content.Shared.Body.Organ;
 using Content.Shared.Chemistry.Components;
+using Content.Shared.Chemistry.Components.SolutionManager;
+using Content.Shared.Chemistry.EntitySystems;
 using Content.Shared.Chemistry.Reagent;
 using Content.Shared.Database;
 using Content.Shared.FixedPoint;
@@ -168,11 +168,11 @@ namespace Content.Server.Body.Systems
                     float scale = (float) mostToRemove / (float) rate;
 
                     // if it's possible for them to be dead, and they are,
-                    // then we shouldn't process any effects, but should probably
-                    // still remove reagents
+                    // then we shouldn't process any effects (unless stated otherwise by the reagent),
+                    // but should probably still remove reagents.
                     if (EntityManager.TryGetComponent<MobStateComponent>(solutionEntityUid.Value, out var state))
                     {
-                        if (_mobStateSystem.IsDead(solutionEntityUid.Value, state))
+                        if (_mobStateSystem.IsDead(solutionEntityUid.Value, state) && !proto.MetaboliseWhileDead)
                             continue;
                     }
 

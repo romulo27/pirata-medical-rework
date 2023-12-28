@@ -1,6 +1,10 @@
 - type: vendingMachineInventory
   id: AutoDrobeInventory
   startingInventory:
+    ClothingHeadMaskPomni: 1
+    ClothingUniformJumpsuitPomni: 1
+    ClothingHandsGlovesPomni: 1
+    ClothingShoesPomni: 1
     ClothingHeadHatJester: 1
     ClothingUniformJumpsuitJester: 1
     ClothingHeadHatJesterAlt: 1
@@ -25,7 +29,7 @@
     ClothingOuterSuitChicken: 2
     ClothingHeadHatChickenhead: 2
     ClothingOuterSuitMonkey: 2
-    ClothingHeadHatPumpkin: 2
+    ClothingHeadHatPumpkin: 4 # Extra pumpkins for the season
     ClothingHeadHatShrineMaidenWig: 2
     ClothingOuterSuitShrineMaiden: 2
     Gohei: 2
